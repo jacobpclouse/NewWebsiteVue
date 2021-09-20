@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import profile from '../Pictures/profile.jpg';
 
 
 export const SiteBackground = styled.div `
@@ -16,6 +17,7 @@ export const PcScreen = styled.div `
     height: 80%;
     width: 70%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background: 
@@ -29,6 +31,15 @@ export const PcScreen = styled.div `
     &:nth-child(1){
         
     }
+`;
+
+export const ProfilePic = styled.div `
+    background: url(${profile}) no-repeat;
+    box-sizing:border-box;
+    height: 38%;
+    width: 20%;
+    background-size: 100% auto;
+    border: 2px solid black;
 `;
 
 

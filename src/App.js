@@ -1,17 +1,16 @@
-import { SiteBackground, PcScreen, KeyboardMain, KeyboardKey } from './Components/App.style'
-
-
+import React from 'react';
+import { SiteBackground, PcScreen, KeyboardMain, KeyboardKey, ProfilePic } from './Components/App.style'
 
 
 function App() {
   return (
     <SiteBackground>
       <PcScreen>
-        Testing 2
+        <ProfilePic></ProfilePic>
       </PcScreen>
+
+
       <KeyboardMain>
-
-
 
         {/* Need to find a way to repeat a div a certain number of times and render an element to a screen */}
 
