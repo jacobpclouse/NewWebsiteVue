@@ -8,7 +8,7 @@ const routes = [
     ]
   },
 
-    // test tutorial page -- with exported layout
+    // test tutorial page -- with exported layout --
     {
       path: '/me',
       component: () => import('layouts/ExportLayout.vue'),

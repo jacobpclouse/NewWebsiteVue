@@ -1,4 +1,6 @@
 ## My New Portfolio Website
+I am creating a new website with Vue js and Quasar!
+
 
 ### Resources used:
 - Quasar Quickstart guide: https://quasar.dev/start/quick-start/
