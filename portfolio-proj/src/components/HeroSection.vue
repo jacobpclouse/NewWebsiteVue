@@ -1,4 +1,21 @@
 <template>
+  <div class="hero-section q-pa-md flex flex-center text-center bg-dark text-secondary">
+    <div>
+      <h1 class="text-h2 text-primary">Your Name</h1>
+      <p class="text-subtitle1">Full-Stack Developer | Designer</p>
+      <q-btn color="primary" class="q-mt-md" label="See My Work" @click="$router.push('/projects')" />
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.hero-section {
+  background: linear-gradient(135deg, #303030, #007FFF); /* Adjusted for dark background */
+}
+</style>
+
+
+<!-- <template>
   <div class="hero-section q-pa-md flex flex-center text-center">
     <div>
       <h1 class="text-h2 text-bold">Your Name</h1>
@@ -29,4 +46,4 @@ export default {
   height: 50vh;
   color: white;
 }
-</style>
+</style> -->
