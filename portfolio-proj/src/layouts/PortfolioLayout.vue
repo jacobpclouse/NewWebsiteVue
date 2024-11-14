@@ -1,10 +1,14 @@
+
 <template>
   <q-layout view="hHh lpR fFf">
     <q-header elevated>
       <q-toolbar :style="{ backgroundColor: 'var(--background-color)' }">
         <q-toolbar-title :style="{ color: 'var(--accent-color)' }">
-          <img alt="My logo" src="~assets/logo2_black.svg" >
-          My Portfolio</q-toolbar-title>
+
+          <img :src="isDark ? 'logo2_white.svg' : 'logo2_black.svg'" 
+               alt="My logo" 
+               :style="{ maxHeight: '30px', width: 'auto', paddingTop: '5px' }">
+        </q-toolbar-title>
         <q-btn flat label="Home" @click="$router.push('/')" :style="{ color: 'var(--text-color)' }" />
         <q-btn flat label="Projects" @click="$router.push('/projects')" :style="{ color: 'var(--text-color)' }" />
 
@@ -17,13 +21,11 @@
       <router-view />
     </q-page-container>
 
-    <!-- Footer: Matches Header Theme -->
     <q-footer elevated class="footer"
       :style="{ backgroundColor: isDark ? 'var(--clr-dark)' : 'var(--clr-light)', color: isDark ? 'var(--clr-light)' : 'var(--clr-dark)' }">
       <div class="footer-content">
         <span>© {{ currentYear }} Jacob Clouse</span>
 
-        <!-- Social Icons -->
         <div class="footer-icons">
           <a href="https://github.com/your-github" target="_blank">
             <i class="fab fa-github"></i>
@@ -38,7 +40,6 @@
       </div>
     </q-footer>
 
-    <!-- Particles -->
     <div v-for="n in 100" :key="n" class="particle-container">
       <div class="particle" :class="isDark ? 'particle-dark' : 'particle-light'" :style="getParticleStyle()" />
     </div>
