@@ -12,8 +12,8 @@ import SkillsSection from "components/SkillsSection.vue";
 export default {
   name: "IndexPage",
   components: {
-    HeroSection,
-    SkillsSection,
+    // HeroSection,
+    // SkillsSection,
   },
 };
 </script>
