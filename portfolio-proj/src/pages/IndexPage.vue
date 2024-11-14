@@ -13,7 +13,7 @@ export default {
   name: "IndexPage",
   components: {
     HeroSection,
-    // SkillsSection,
+    SkillsSection,
   },
 };
 </script>
