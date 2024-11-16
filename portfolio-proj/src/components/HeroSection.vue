@@ -7,7 +7,7 @@
         <h4 class="text-h4 text-secondary" style="margin-bottom: 5px;">Hello, my name is</h4>
         <h1 class="text-h1 text-primary" style="margin-top: 0;">Jacob Clouse</h1>
         <p class="text-subtitle1">Full-Stack Developer | Designer</p>
-        <q-btn color="primary" class="q-mt-md" label="See My Work" @click="$router.push('/projects')" />
+        <q-btn color="primary" class="q-mt-md" label="View My Github Software Projects..." @click="$router.push('/projects')" />
       </div>
     </div>
   </div>
